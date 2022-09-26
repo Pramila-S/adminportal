@@ -13,7 +13,7 @@ useEffect(() => {
 
 let loadData = async () =>{
     setLoading(true)
-let users = await axios.get("${env.api}/users");
+let users = await axios.get(`${env.api}/users`);
 console.log(users);
     setUsers(users.data)
     setLoading(false)
